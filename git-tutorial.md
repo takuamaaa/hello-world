@@ -1,55 +1,21 @@
-「既出のgitコマンド」
-git init
-  gitの初期化・設定開始
-git status
-  ワークツリーのステータスを表示
- git config 
-  設定周りの確認・変更
-git log
-  ログを表示
-  -- onelineでコミットメッセージの1行のみの一覧表示
-git diff
-  ファイルの差分を表示
-  
-git add
-  ステージングエリアに追加
-git commit 
-  コミットの実行
+修正すべき項目を記述するissueの作成：
 
-git commit --amend --no-edit
-  コミットの修正
-git checkout
-  削除されたファイルを復旧や過去コミットの復元など（元に戻す変更がstaging area/index内にある場合）
-git reset
-  コミットのリセット
-git revert
-  「コミットの変更を打ち消す」コミット
-git rm
-  ファイルとindex情報の削除
+レポジトリのメインページへ移動し、「Issues」タブをクリックする。
+「New issue」ボタンをクリックして、修正すべき項目について詳細を記入する。
+「Submit new issue」ボタンをクリックしてissueを作成する。
+アクセス権限の付与：
 
-git clone
-  レポジトリをコピー
-git pull
-  リモートレポジトリの同期	
-git push
-  変更をアップロードする
-git request-pull
-  プルリクエスト：変更依頼
-git remote
-  リモートレポジトリの設定
+レポジトリのメインページへ移動し、「Settings」タブをクリックする。
+サイドバーの「Manage access」を選ぶ。
+「Invite a collaborator」をクリックし、GitHubユーザ名またはメールアドレスを入力する。
+「Add <username> to <repository>」をクリックして、ユーザにアクセス権を付与する。
+相手が提出したレポジトリに修正依頼を提案：
 
-git branch
-  ブランチの作成
-git checkout
-  ブランチの切り替え
-git merge
-  ブランチの統合
-  --ff-only: fast forward only. 変更のない統合先ブランチにマージ
-git clone
-  レポジトリをコピー
-git push
-  変更をアップロードする
+レポジトリのメインページへ移動し、「Pull requests」タブをクリックする。
+「New pull request」をクリックする。
+修正依頼の詳細を入力し、「Create pull request」をクリックする。
+相手から提案された修正依頼をレビュー・反映：
 
-
-
-
+レポジトリのメインページへ移動し、「Pull requests」タブをクリックする。
+レビューしたいpull requestをクリックし、提案された変更を確認する。
+変更が適切であれば、「Merge pull request」をクリックし、その後「Confirm merge」をクリックする。これにより提案された変更がレポジトリに反映される。
